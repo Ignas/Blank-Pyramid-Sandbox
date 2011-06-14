@@ -31,7 +31,7 @@ bin/paster: buildout.cfg bin/buildout setup.py versions.cfg
 bin/tags: buildout.cfg bin/buildout setup.py versions.cfg
 	$(BUILDOUT)
 
-export PGPORT ?= 4488
+export PGPORT ?= 4498
 
 PG_PATH = $(shell if test -d /usr/lib/postgresql/8.3; then echo /usr/lib/postgresql/8.3; else echo /usr/lib/postgresql/8.4; fi)
 
