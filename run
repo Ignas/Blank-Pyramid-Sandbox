@@ -1,2 +1,3 @@
 #!/bin/bash
-make run
+bin/python setup.py develop
+bin/python runapp.py
