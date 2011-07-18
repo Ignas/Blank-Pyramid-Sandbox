@@ -105,7 +105,7 @@ test: bin/nosetests instance/done instance/var/run/.s.PGSQL.${PGPORT}
 	bin/nosetests
 
 .PHONY: run
-run: bin/paster instance/done instance/var/run/.s.PGSQL.${PGPORT}
+run: bin/paster
 	bin/paster serve development.ini --reload --monitor-restart
 
 .PHONY: clean
